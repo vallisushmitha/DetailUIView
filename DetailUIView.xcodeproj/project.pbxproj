@@ -14,6 +14,9 @@
 		373DA0531CED909300F310EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 373DA0511CED909300F310EC /* LaunchScreen.storyboard */; };
 		373DA05E1CED909300F310EC /* DetailUIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373DA05D1CED909300F310EC /* DetailUIViewTests.swift */; };
 		373DA0691CED909300F310EC /* DetailUIViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373DA0681CED909300F310EC /* DetailUIViewUITests.swift */; };
+		37FDB52D1CEDB4AC0031286D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FDB52C1CEDB4AC0031286D /* DetailViewController.swift */; };
+		37FDB5321CEDB4E40031286D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FDB5301CEDB4E40031286D /* DetailTableViewCell.swift */; };
+		37FDB5331CEDB4E40031286D /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37FDB5311CEDB4E40031286D /* DetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		373DA0641CED909300F310EC /* DetailUIViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetailUIViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		373DA0681CED909300F310EC /* DetailUIViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUIViewUITests.swift; sourceTree = "<group>"; };
 		373DA06A1CED909400F310EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37FDB52C1CEDB4AC0031286D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		37FDB5301CEDB4E40031286D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		37FDB5311CEDB4E40031286D /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				373DA0481CED909300F310EC /* AppDelegate.swift */,
 				373DA04A1CED909300F310EC /* ViewController.swift */,
+				37FDB52C1CEDB4AC0031286D /* DetailViewController.swift */,
+				37FDB5301CEDB4E40031286D /* DetailTableViewCell.swift */,
+				37FDB5311CEDB4E40031286D /* DetailTableViewCell.xib */,
 				373DA04C1CED909300F310EC /* Main.storyboard */,
 				373DA04F1CED909300F310EC /* Assets.xcassets */,
 				373DA0511CED909300F310EC /* LaunchScreen.storyboard */,
@@ -193,7 +202,6 @@
 				TargetAttributes = {
 					373DA0441CED909100F310EC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = JYBV57ZJUU;
 					};
 					373DA0581CED909300F310EC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -234,6 +242,7 @@
 			files = (
 				373DA0531CED909300F310EC /* LaunchScreen.storyboard in Resources */,
 				373DA0501CED909300F310EC /* Assets.xcassets in Resources */,
+				37FDB5331CEDB4E40031286D /* DetailTableViewCell.xib in Resources */,
 				373DA04E1CED909300F310EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +270,8 @@
 			files = (
 				373DA04B1CED909300F310EC /* ViewController.swift in Sources */,
 				373DA0491CED909300F310EC /* AppDelegate.swift in Sources */,
+				37FDB5321CEDB4E40031286D /* DetailTableViewCell.swift in Sources */,
+				37FDB52D1CEDB4AC0031286D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DetailUIView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kvana.DetailUIView;
@@ -415,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DetailUIView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kvana.DetailUIView;
@@ -487,6 +500,7 @@
 				373DA06F1CED909400F310EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		373DA0701CED909400F310EC /* Build configuration list for PBXNativeTarget "DetailUIViewTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +509,7 @@
 				373DA0721CED909400F310EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		373DA0731CED909400F310EC /* Build configuration list for PBXNativeTarget "DetailUIViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +518,7 @@
 				373DA0751CED909400F310EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
